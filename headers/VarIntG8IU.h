@@ -14,7 +14,7 @@
 #define VARINTG8IU_H__
 #if defined(__GNUC__) && (defined(__x86_64__) || defined(__i386__))
 #include <emmintrin.h>
-#elif defined(__aarch64__)
+#elif defined(__aarch64__) || defined(__arm__)
 /* GCC-compatible compiler, targeting ARM with NEON */
 #include <simde/x86/sse3.h>
 #endif

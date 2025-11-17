@@ -14,7 +14,7 @@
     /* GCC-compatible compiler, targeting x86/x86-64 */
     #include <x86intrin.h>
 
-#elif defined(__aarch64__)
+#elif defined(__aarch64__) || defined(__arm__)
     /* GCC-compatible compiler, targeting ARM with NEON */
     #include <simde/x86/sse4.1.h>
 #elif defined(__GNUC__) && defined(__IWMMXT__)
